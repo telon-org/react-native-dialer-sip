@@ -20,7 +20,7 @@ import {
 
 import { Endpoint as teleEndpoint } from 'react-native-tele'
 import { Endpoint as sipEndpoint } from 'react-native-sip'
-import { ReplaceDialer } from 'react-native-replace-dialer'
+//import { ReplaceDialer } from 'react-native-replace-dialer'
 
 export default class App extends Component {
   constructor() {
@@ -34,6 +34,7 @@ export default class App extends Component {
 
   async tEndpointInit() {
     console.log("tEndpointInit()");
+    /*
     let tReplaceDialer = new ReplaceDialer();
 
     if (!tReplaceDialer.isDefault()) {
@@ -44,6 +45,7 @@ export default class App extends Component {
         console.log('Default dialer NOT set');
       }
     }
+    */
 
 
     this.tEndpoint = new teleEndpoint();
